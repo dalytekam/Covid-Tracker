@@ -1,4 +1,5 @@
 import React from "react";
+import"./WorldMap.css"
 const WorldMap = () => {
   return (
     <div className="map">

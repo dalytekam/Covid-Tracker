@@ -3,6 +3,7 @@
   display: inline-block;
   margin-bottom: 15px;
   width: 100%;
+  transition: all 600ms ease-in;
 }
 .select select {
   font-size: 30px;
@@ -19,7 +20,6 @@
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  transition: all 300ms ease-in;
 }
 .select select::-ms-expand {
   display: none;

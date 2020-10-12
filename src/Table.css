@@ -16,3 +16,10 @@
 .table__head {
   text-align: right;
 }
+.table__row .table__data:nth-child(2) {
+  text-align: left;
+  font-weight: bolder;
+}
+.table__head:nth-child(2) {
+  text-align: left;
+}
