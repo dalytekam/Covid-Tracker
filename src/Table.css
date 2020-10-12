@@ -1,0 +1,18 @@
+.table {
+  color: #fff;
+  text-align: center;
+}
+.table__image {
+  height: 20px;
+  width: 30px;
+}
+.table__head {
+  font-size: 1.2rem;
+}
+.table__row:nth-of-type(even) {
+  background-color: rgb(15, 15, 15);
+}
+.table__data,
+.table__head {
+  text-align: right;
+}

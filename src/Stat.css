@@ -1,0 +1,26 @@
+.stat {
+  display: grid;
+  border: 1px solid red;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgba(240, 237, 237, 0.6);
+  color: #fff;
+  padding: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.stat__number {
+  font-size: 2.5rem;
+  margin-bottom: 0px;
+}
+.stat__info {
+  font-size: 2rem;
+  font-weight: 100;
+}
+.stat__delta {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.stat__lastUpdate {
+  color: #ffffff;
+}
