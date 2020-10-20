@@ -7,7 +7,7 @@
 }
 .mainContainer {
   display: grid;
-  grid-template-columns: 2.5fr 6fr 2.5fr;
+  grid-template-columns: 2.5fr 5fr 3fr;
   grid-gap: 1rem;
   /*grid-template-rows: 1fr 1fr 1fr 4fr 4fr 4fr;*/
   max-height: 100vh;
@@ -20,25 +20,11 @@
   height: 50px;
 }
 .mainContainer__middle {
+  display: grid;
   border: 1px solid #f00;
   margin-bottom: 1rem;
   border-radius: 5px;
   color: #fff;
-  background-image: linear-gradient(
-    to right bottom,
-    #12010b,
-    #291025,
-    #3e1843,
-    #4b2567,
-    #4c3791,
-    #454cab,
-    #3461c3,
-    #0076db,
-    #008bdc,
-    #009bd0,
-    #00a7bc,
-    #09b1a7
-  );
 }
 .mainContainer__right {
   border: 1px solid #fff;

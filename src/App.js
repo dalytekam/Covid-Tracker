@@ -23,7 +23,9 @@ const onCountrySelect = async (event)=>{
  const url = selectedCountry ==="worlwide"?"/all":`/countries/${selectedCountry}?strict=true`
   const fetchCountryData = await requester.get(url);
     setCountry(fetchCountryData.data);
-   
+ setMapCenter(fetchCountryData.data.country?[fetchCountryData.data.countryInfo.lat,fetchCountryData.data.countryInfo.long]:[7.369722,12.354722]);
+   setMapZoom(5);
+   console.log(mapCenter);
   }
 useEffect(()=>{
   const handleInitialPageLoading = async()=>{
@@ -36,6 +38,7 @@ useEffect(()=>{
  
 
 console.log(country)
+
 
 //! from table
  const [tableCountries, setTableCountries] = useState([]);
@@ -53,6 +56,10 @@ const sortedData = sortData(tableCountriesResult.data)
      
       
   }, []);
+
+  const [mapCenter,setMapCenter]= useState([7.369722, 12.354722]);
+  const [mapZoom, setMapZoom] = useState(3);
+ 
   
   return (
     <div className="app">
@@ -88,7 +95,7 @@ const sortedData = sortData(tableCountriesResult.data)
           />
         </div>
         <div className="mainContainer__middle">
-          <WorldMap />
+          <WorldMap countries = {tableCountries} mapCenter = {mapCenter}  mapZoom={mapZoom}/>
         </div>
         <div className="mainContainer__right">
           <Table data ={tableCountries} />
