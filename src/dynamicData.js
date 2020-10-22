@@ -8,14 +8,15 @@ const drawCirclesOnTheMap=(allcountries)=>(
     allcountries.map((country)=>(
         <Circle key={country.country}
        center={[country.countryInfo.lat,country.countryInfo.long]}
-       fillOpacity={0.5}
+       fillOpacity={0.3}
        fillColor={"green"}
-       radius={country.cases>1000000?country.cases/4:country.cases}
+       radius={country.cases/4}
        color= {"red"}>
            
 
         <Popup>
-           {country.country}
+           <h2>{country.country}</h2>
+           <h3>Recovered:{country.recovered}</h3>
         </Popup>
        </Circle>
        

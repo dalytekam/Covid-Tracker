@@ -10,6 +10,9 @@ import getUtcDate from "./dateFormatter"
 import numeral from "numeral"
 import Flag from "./Flag";
 import sortData from "./sortTheData";
+import {MdLocalHospital} from "react-icons/md";
+import {GiDeathSkull} from "react-icons/gi";
+import {FaThumbsUp} from "react-icons/fa";
 
 function App() {
  const [country, setCountry] = useState("Wordwide");
@@ -78,6 +81,9 @@ const sortedData = sortData(tableCountriesResult.data)
             delta={`+${numeral(country.todayCases).format("0,0")} New Cases`}
             lastUpdate={`Last update : ${getUtcDate(country.updated)}`}
             color={"#fca311"}
+            icon = {<MdLocalHospital size= "2rem"/>}
+            
+          
           />
           <Stat
             number={numeral(country.deaths).format("0,0")}
@@ -85,6 +91,7 @@ const sortedData = sortData(tableCountriesResult.data)
              delta={`+${numeral(country.todayDeaths).format("0,0")} New Deaths`}
              lastUpdate={`Last update : ${getUtcDate(country.updated)}`}
             color={"red"}
+             icon = {<GiDeathSkull size= "2rem"/>}
           />
           <Stat
             number={ numeral(country.recovered).format("0,0")}
@@ -92,6 +99,7 @@ const sortedData = sortData(tableCountriesResult.data)
              delta={`+${numeral(country.todayRecovered).format("0,0")} New Recoveries`}
              lastUpdate={`Last update : ${getUtcDate(country.updated)}`}
             color={"green"}
+            icon= {<FaThumbsUp size= "2rem"/>}
           />
         </div>
         <div className="mainContainer__middle">

@@ -1,5 +1,6 @@
 .stat {
   display: grid;
+  grid-template-columns: 1fr 4fr;
   border: 1px solid red;
   border-radius: 6px;
   box-shadow: 1px 1px 4px rgba(240, 237, 237, 0.6);
@@ -8,7 +9,13 @@
   justify-content: center;
   margin-bottom: 1rem;
 }
-
+.stat__icon {
+  display: grid;
+  place-items: center;
+}
+.stat__data {
+  place-items: center;
+}
 .stat__number {
   font-size: 2.5rem;
   margin-bottom: 0px;
