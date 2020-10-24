@@ -61,8 +61,8 @@ const sortedData = sortData(tableCountriesResult.data)
   }, []);
 
   const [mapCenter,setMapCenter]= useState([7.369722, 12.354722]);
-  const [mapZoom, setMapZoom] = useState(3);
- 
+  const [mapZoom, setMapZoom] = useState(2);
+  const [type,setType] = useState("cases");
   
   return (
     <div className="app">
@@ -74,8 +74,10 @@ const sortedData = sortData(tableCountriesResult.data)
           <div className="dropDownContainer">
             <Dropdown onCountryChange = {onCountrySelect} />
           </div>
-          <Flag imageSrc={country.countryInfo?country.countryInfo.flag:"https://via.placeholder.com/225x150"}/>
+         
           <Stat
+          onclick={e=>setType("cases")}
+          active={type==="cases"}
             number={numeral(country.cases).format("0,0")}
             info="TOTAL CASES"
             delta={`+${numeral(country.todayCases).format("0,0")} New Cases`}
@@ -86,6 +88,8 @@ const sortedData = sortData(tableCountriesResult.data)
           
           />
           <Stat
+           onclick={e=>setType("deaths")}
+            active={type==="deaths"}
             number={numeral(country.deaths).format("0,0")}
             info="TOTAL DEATHS"
              delta={`+${numeral(country.todayDeaths).format("0,0")} New Deaths`}
@@ -94,6 +98,8 @@ const sortedData = sortData(tableCountriesResult.data)
              icon = {<GiDeathSkull size= "2rem"/>}
           />
           <Stat
+           onclick={e=>setType("recovered")}
+            active={type==="recovered"}
             number={ numeral(country.recovered).format("0,0")}
             info="TOTAL RECOVERIES"
              delta={`+${numeral(country.todayRecovered).format("0,0")} New Recoveries`}
@@ -103,7 +109,7 @@ const sortedData = sortData(tableCountriesResult.data)
           />
         </div>
         <div className="mainContainer__middle">
-          <WorldMap countries = {tableCountries} mapCenter = {mapCenter}  mapZoom={mapZoom}/>
+          <WorldMap countries = {tableCountries} mapCenter = {mapCenter}  mapZoom={mapZoom} type={type}/>
         </div>
         <div className="mainContainer__right">
           <Table data ={tableCountries} />

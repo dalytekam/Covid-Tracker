@@ -1,13 +1,16 @@
 .stat {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  border: 1px solid red;
+
   border-radius: 6px;
   box-shadow: 1px 1px 4px rgba(240, 237, 237, 0.6);
   color: #fff;
   padding: 0.5rem;
   justify-content: center;
   margin-bottom: 1rem;
+}
+.selected {
+  border-left-width: 6px !important;
 }
 .stat__icon {
   display: grid;

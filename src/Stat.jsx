@@ -1,11 +1,12 @@
 import React from "react";
 import "./Stat.css";
 
-const Stat = ({ number, info, delta, lastUpdate, color, icon}) => {
+const Stat = ({ number, info, delta, lastUpdate, color, icon, onclick,active}) => {
   return (
     <div 
-      style={{ border: `1px solid ${color}`, color: `${color}` }}
-      className="stat"
+    onClick={onclick}
+      style={{ border: `1px solid ${color}`, color: `${color}`,cursor:"pointer" }}
+      className={`stat ${active && "selected"}`}
     >
       <div className= "stat__icon">
      

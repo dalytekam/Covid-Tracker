@@ -4,7 +4,7 @@ import {TileLayer,Map} from "react-leaflet"
 import drawCirclesOnTheMap from "./dynamicData"
 
 
-const WorldMap = ({mapCenter, mapZoom, countries }) => {
+const WorldMap = ({mapCenter, mapZoom, countries,type }) => {
   return (
     
        <Map center={mapCenter} zoom={mapZoom}>
@@ -12,7 +12,7 @@ const WorldMap = ({mapCenter, mapZoom, countries }) => {
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-       {drawCirclesOnTheMap(countries)}
+       {drawCirclesOnTheMap(countries,type)}
       </Map>
    
   );

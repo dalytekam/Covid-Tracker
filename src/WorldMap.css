@@ -2,3 +2,30 @@
   width: 100%;
   height: 100vh;
 }
+
+.popup__flag {
+  height: 80px;
+  width: 100%;
+  object-fit: contain;
+  background-size: cover;
+  background-position: "center center";
+  border: 0.5px solid #ccc;
+}
+.popup__country {
+  font-weight: bold;
+}
+.popup__active {
+  color: blue;
+}
+.popup__deaths {
+  color: red;
+}
+.popup__recovered {
+  color: green;
+}
+.popup__critical {
+  color: #815770;
+}
+.popup__cases {
+  color: #fca311;
+}
