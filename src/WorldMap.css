@@ -4,11 +4,11 @@
 }
 
 .popup__flag {
-  height: 80px;
+  height: 60px;
   width: 100%;
   object-fit: contain;
   background-size: cover;
-  background-position: "center center";
+  background-position: center center;
   border: 0.5px solid #ccc;
 }
 .popup__country {
