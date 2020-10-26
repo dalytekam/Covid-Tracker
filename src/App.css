@@ -3,24 +3,26 @@
 }
 .app {
   display: grid;
-  grid-gap: 1rem;
   border: 3px solid rgb(75, 214, 11);
+  height: 95vh;
 }
 .mainContainer {
   display: grid;
   grid-template-columns: 2.5fr 5fr 3fr;
   grid-gap: 1rem;
-
-  max-height: 100vh;
+  border: 2px solid red;
+  height: 85vh;
+  margin-top: 0px;
 }
 .mainContainer__left {
   display: grid;
   grid-template-rows: 1fr 5fr 5fr 5fr;
   border: 3px solid #fff;
-  max-height: 100vh;
+  height: 85vh;
 }
 .dropDownContainer {
   height: 50px;
+  margin-bottom: 0.5rem;
 }
 .mainContainer__middle {
   display: grid;
@@ -28,6 +30,7 @@
   margin-bottom: 1rem;
   border-radius: 5px;
   color: #fff;
+  height: 85vh;
 }
 .mainContainer__right {
   border: 3px solid #fff;
@@ -35,7 +38,7 @@
   border-radius: 5px;
   color: #fff;
   overflow-y: scroll;
-  max-height: 100vh;
+  height: 85vh;
 }
 .mainContainer__right::-webkit-scrollbar {
   display: none;

@@ -6,7 +6,7 @@
   color: #fff;
   padding: 0.5rem;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   place-items: center;
 }
 .stat__data {
@@ -23,15 +23,15 @@
   place-items: center;
 }
 .stat__number {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 0px;
 }
 .stat__info {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 100;
 }
 .stat__delta {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 .stat__lastUpdate {

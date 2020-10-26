@@ -83,7 +83,7 @@ const sortedData = sortData(tableCountriesResult.data)
             delta={`+${numeral(country.todayCases).format("0,0")} New Cases`}
             lastUpdate={`Last update : ${getUtcDate(country.updated)}`}
             color={"#fca311"}
-            icon = {<MdLocalHospital size= "3rem"/>}
+            icon = {<MdLocalHospital size= "1rem"/>}
             
           
           />
@@ -95,7 +95,7 @@ const sortedData = sortData(tableCountriesResult.data)
              delta={`+${numeral(country.todayDeaths).format("0,0")} New Deaths`}
              lastUpdate={`Last update : ${getUtcDate(country.updated)}`}
             color={"red"}
-             icon = {<GiDeathSkull size= "3rem"/>}
+             icon = {<GiDeathSkull size= "1rem"/>}
           />
           <Stat
            onclick={e=>setType("recovered")}
@@ -105,7 +105,7 @@ const sortedData = sortData(tableCountriesResult.data)
              delta={`+${numeral(country.todayRecovered).format("0,0")} New Recoveries`}
              lastUpdate={`Last update : ${getUtcDate(country.updated)}`}
             color={"green"}
-            icon= {<FaThumbsUp size= "3rem"/>}
+            icon= {<FaThumbsUp size= "1rem"/>}
           />
         </div>
         <div className="mainContainer__middle">
