@@ -63,6 +63,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 18fr;
     height: 26vh;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 8px;
     grid-template-areas:
       "dropdown dropdown dropdown"
       "cases deaths recovered";
@@ -75,11 +77,16 @@
     grid-area: main-middle;
     height: 40vh;
     margin-bottom: 0px;
+    border: 1px solid white;
+
+    padding-bottom: 5px;
   }
   .mainContainer__right {
     grid-area: main-right;
     height: 23vh;
     margin-top: 0px;
+    border: 1px solid white;
+    border-radius: 6px;
   }
   .app {
     height: 100vh;
