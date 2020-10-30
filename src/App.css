@@ -19,6 +19,7 @@
   grid-template-rows: 1fr 5fr 5fr 5fr;
   /* border: 3px solid #fff;*/
   height: 85vh;
+  grid-gap: 0.8rem;
 }
 .dropDownContainer {
   height: 50px;
@@ -31,7 +32,8 @@
   border-radius: 5px;
   color: #fff;
   height: 85vh;
-  grid-template-rows: 5fr 1fr;
+  grid-template-rows: 13fr 1fr;
+  border: 1px solid #eee;
 }
 .mainContainer__right {
   /* border: 3px solid #fff;*/
@@ -40,6 +42,7 @@
   color: #fff;
   overflow-y: scroll;
   height: 85vh;
+  border: 1px solid #eee;
 }
 .mainContainer__right::-webkit-scrollbar {
   display: none;

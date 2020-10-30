@@ -14,8 +14,10 @@ const WorldMap = ({mapCenter, mapZoom, countries,type }) => {
         />
        {drawCirclesOnTheMap(countries,type)}
       </Map>
-      <p>source: disease.sh.</p>
+      <section>
+      <p>Source: Worldometers</p>
       <p>Built with love by <a href="https://dalytekam.github.io/" target ="_blank">Daly tekam</a></p>
+      </section>
     </>
   );
 };

@@ -67,7 +67,7 @@ const sortedData = sortData(tableCountriesResult.data)
   return (
     <div className="app">
       <div className="headerContainer">
-        <Header title="covid 19 tracker" />
+        <Header title="Real time covid 19 tracker" />
       </div>
       <div className="mainContainer">
         <div className="mainContainer__left">
