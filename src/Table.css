@@ -23,3 +23,34 @@
 .table__head:nth-child(2) {
   text-align: left;
 }
+
+@media only screen and (max-width: 360px) {
+  .table h1 {
+    font-size: 15px;
+  }
+  .table__image {
+    height: 10px;
+    width: 15px;
+  }
+  .table__head {
+    font-size: 14px;
+  }
+  .table__row:nth-of-type(even) {
+    background-color: rgb(15, 15, 15);
+  }
+  .table__data,
+  .table__head {
+    text-align: right;
+  }
+  .table__row .table__data:nth-child(2) {
+    text-align: left;
+    font-weight: bolder;
+  }
+  .table__head:nth-child(2) {
+    text-align: left;
+  }
+
+  .table__data {
+    font-size: 10px;
+  }
+}

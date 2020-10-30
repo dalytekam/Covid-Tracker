@@ -37,3 +37,30 @@
 .stat__lastUpdate {
   color: #ffffff;
 }
+
+@media only screen and (max-width: 360px) {
+  .stat {
+    height: 95px;
+  }
+  .selected {
+    border-left-width: 3px !important;
+  }
+
+  .stat__number {
+    font-size: 0.5rem;
+    margin-bottom: 0px;
+  }
+  .stat__info {
+    font-size: 0.5rem;
+    font-weight: 100;
+  }
+  .stat__delta {
+    font-size: 0.3rem;
+    font-weight: lighter;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat__lastUpdate {
+    font-size: 7px;
+  }
+}
