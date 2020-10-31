@@ -52,11 +52,11 @@
   }
   .stat__info {
     font-size: 0.5rem;
-    font-weight: 100;
+    font-weight: normal;
   }
   .stat__delta {
     font-size: 0.3rem;
-    font-weight: lighter;
+    font-weight: normal;
     margin-bottom: 0.5rem;
   }
 
