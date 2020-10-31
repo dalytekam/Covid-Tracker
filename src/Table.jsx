@@ -19,7 +19,7 @@ const Table = ({data}) => {
        </thead>
        <tbody>
         {data.map(singleCountry=>(<tr key={singleCountry.country} className="table__row">
-         <td className="table__flag"><img className="table__image" src={singleCountry.countryInfo.flag}/></td>
+         <td className="table__flag"><img className="table__image" src={singleCountry.countryInfo.flag} alt="flag picture"/></td>
          <td className="table__data">{truncateString(singleCountry.country,13)}</td>
          <td className="table__data" style={{color:"#fca311"}}>{numeral(singleCountry.cases).format("0,0")}</td>
          <td className="table__data" style={{color:"red"}}>{numeral(singleCountry.deaths).format("0,0")}</td>
