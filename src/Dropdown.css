@@ -58,7 +58,7 @@ select:nth-child(even) {
   color: #fff;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 600px) {
   .select select {
     font-size: 15px;
     padding: 5px 5px;

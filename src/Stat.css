@@ -38,7 +38,7 @@
   color: #ffffff;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 600px) {
   .stat {
     height: 95px;
   }

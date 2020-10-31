@@ -37,7 +37,7 @@ section p {
   color: #fca311;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 600px) {
   .popup__flag {
     height: 30px;
     width: 100%;
