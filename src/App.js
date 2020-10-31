@@ -8,7 +8,7 @@ import Table from "./Table";
 import requester from "./axiosConfig";
 import getUtcDate from "./dateFormatter"
 import numeral from "numeral"
-import Flag from "./Flag";
+/*import Flag from "./Flag";*/
 import sortData from "./sortTheData";
 import {MdLocalHospital} from "react-icons/md";
 import {GiDeathSkull} from "react-icons/gi";

@@ -16,7 +16,7 @@ const WorldMap = ({mapCenter, mapZoom, countries,type }) => {
       </Map>
       <section>
       <p>Source: Worldometers</p>
-      <p>Built with love by <a href="https://dalytekam.github.io/" target ="_blank">Daly tekam</a></p>
+      <p>Built with love by <a href="https://dalytekam.github.io/" target ="_blank" rel="external">Daly tekam</a></p>
       </section>
     </>
   );
