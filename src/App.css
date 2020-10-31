@@ -85,6 +85,9 @@
     padding-bottom: 5px;
   }
   .mainContainer__right {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
     grid-area: main-right;
     height: 23vh;
     margin-top: 0px;
